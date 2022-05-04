@@ -1,29 +1,20 @@
-<?php
-echo "<h1>Hello Word!</h1>";
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-$categorias = [];
-$categorias[] = 'infantil';
-$categorias[] = 'adolescente';
-$categorias[] = 'adulto';
-$categorias[] = 'idoso';
-// print_r($categorias);
-
-
-$nome = 'Filipe';
-$idade = 32;
-
-//var_dump($nome);
-//var_dump($idade)
-
-if($idade >= 6 && $idade <= 12){
-    echo 'infantil';
-}
-else if($idade >= 13 && $idade <= 18){
-    echo 'adolescente';
-}
-else
-{
-    echo 'adulto';
-}
-
-?>
+    <meta charset="UTF-8">
+    <title>Formulário de Inscrição</title>
+    <meta name="autor" content="">
+    <meta name="viewport" content="">
+    <meta nome="description" content="width-device.width, initial-scale-1">
+    
+</head>
+<body>
+    <p>Formulário para inscrição de competidores</p>
+    <form action="script.php" method="POST"><!-- action é responsavel de processar dados que seram enviado pelo metodo POST -->
+        <p>Seu Nome: <input type="text" name="nome" /></p>
+        <p>Sua idade: <input type="text" name="idade" /></p>
+        <p><input type="submit" value="Enviar dados co competidor"/></p>
+    </form>
+</body>
+</html>
